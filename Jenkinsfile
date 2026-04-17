@@ -5,6 +5,10 @@
 pipeline {
     agent any
 
+    tools {
+        nodejs 'NodeJS-22'
+    }
+
     environment {
         SERVICE_NAME    = 'notification-service'
         REPO_NAME       = 'zomato-notification-service'
